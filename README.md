@@ -6,7 +6,7 @@ Week 1 - Write main class for ShoppingMain and print HelloWorld message
 
 Week 2 - Implement in ShoppingMain Class:
 
-·         Create string variables item_1, item_2 and assign values
+·         Create string variables item_1_name, item_2_name and assign values
 
 ·         Create int variables for price item_1_price, item_2_price
 
