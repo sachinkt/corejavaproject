@@ -21,3 +21,9 @@ Week 2 - Implement in ShoppingMain Class:
 ·         Calculate final price for each item after coupon e.g. final_cost_1 = total_cost_1 - ((total_cost_1 * item_1_coupon) / 100);
 
 ·         Try changing type from int to double and calculate more accurate results
+
+Week 3 -  Make following changes in code of week2 
+
+·         Take all inputs from users, see item_1_name and item_1_price and complete all TODO's
+
+·         Convert data type for item_1_finalCost and item_2_finalCost to double
