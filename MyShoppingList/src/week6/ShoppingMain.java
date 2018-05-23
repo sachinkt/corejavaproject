@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 /**
  * Session 6: Make following changes in code of week5
- * 
- *  1. Practice - Write a sample program which have a method to print numbers 1-10 using loops and return sum.
- *  2. Move calculation of item_1_totalCost, item_2_totalCost to method. Method should return cost. Replace current code with method. (see TODO: 2)  
- *  3. Move calculation of item_2_finalCost, item_2_finalCost to method. Method should return final cost. Replace current code with method. (see TODO: 2)
- *  4. Move calculation of coupon applied on shopping cart to a method.
- *  5. Assuming calculated shopping cost is constant for each month. Print cost for each month e.g. "Cost of Month 1 is : xxx", "Cost of Month 2 is : xxx" 
- *  	Hint: Run a loop 12 times and print costAfterCoupon
+ *   
+ *  1. Move calculation of item_1_totalCost, item_2_totalCost to method. Method should return cost. Replace current code with method. (see TODO: 2)  
+ *  2. Move calculation of item_2_finalCost, item_2_finalCost to method. Method should return final cost. Replace current code with method. (see TODO: 2)
+ *  3. Move calculation of coupon applied on shopping cart to a method.
+ *  
  **/
 public class ShoppingMain {
 	private static Scanner input;
@@ -58,7 +56,7 @@ public class ShoppingMain {
 		System.out.println("Enter coupon for item3 : ");
 		item_3_coupon = input.nextInt();
 
-		//TODO: 2 - Write a method to calculate total cost instead of writing below code for each item. 
+		//TODO: 1 - Write a method to calculate total cost instead of writing below code for each item. 
 		int item_1_totalCost = item_1_price * item_1_quantity;
 		int item_2_totalCost = item_2_price * item_2_quantity;
 		int item_3_totalCost = item_3_price * item_3_quantity;
@@ -70,7 +68,7 @@ public class ShoppingMain {
 		printCouponRate(item_2_name, item_2_coupon);
 		printCouponRate(item_3_name, item_3_coupon);
 
-		//TODO: 3 - Write a method to calculate final cost instead of writing below code for each item. 
+		//TODO: 2 - Write a method to calculate final cost instead of writing below code for each item. 
 		double item_1_finalCost = item_1_totalCost - (item_1_totalCost * item_1_coupon / 100);
 		double item_2_finalCost = item_2_totalCost - (item_2_totalCost * item_2_coupon / 100);
 		double item_3_finalCost = item_3_totalCost - (item_3_totalCost * item_3_coupon / 100);
@@ -105,7 +103,7 @@ public class ShoppingMain {
 
 		double couponDiscount = 0;
 
-		//TODO 4 : Move this calculation to a method.
+		//TODO 3 : Move this calculation to a method.
 		if (couponCode.equals("A")) {
 			couponDiscount = finalCost * 5 / 100;
 		} else if (couponCode.equals("B")) {
@@ -118,7 +116,6 @@ public class ShoppingMain {
 
 		System.out.println("Cost after apply coupon on shopping cart : " + costAfterCoupon);
 		
-		//TODO 5: Print cost for each month. 
 	}
 
 	private static void printTotalCost(String itemName, int totalCost) {
