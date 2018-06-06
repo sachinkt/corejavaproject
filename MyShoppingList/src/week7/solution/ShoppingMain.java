@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 /**
  * Session 7: Make following changes in code of week6
- *   
- *  1. If name of item is more than 10 character stop execution and show user a message.  
- *  2. Modify the program to accept n number of items, where n is provided by user
+ *  
+ *  1. Comment code for printCostStatistics & printCouponStatistics and logic for more expensive 
+ *     and least expensive items. Do not delete we will re-write this after we introduce
+ *     arrays in Session 8. It is commented in the code below.    
+ *  2. If name of item is more than 10 character stop execution and show user a message.  
+ *  3. Modify the program to accept n number of items, where n is provided by user
  *  	a. Ask user how many items he want to enter.
  *  	b. Create a for loop and ask user item_name, item_price, item_quantity, item_coupon.
  *  	c. Calculate total cost for each item inside the loop.
